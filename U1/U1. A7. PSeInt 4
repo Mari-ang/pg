@@ -1,0 +1,56 @@
+Un banco necesita realizar un sistema de evaluación preliminar para otorgar un crédito, a fin de mejorar el tiempo de validación y que los potenciales clientes puedan saber de manera más rápido a quiénes se les pudiera otorgar un crédito.
+
+De acuerdo a la última reunión innecesaria, a las 6:00 p.m. un día sábado, se presentaron las siguientes condicionales.
+
+El prospecto debe tener al menos 21 años de edad, debe tener un ingreso de al menos 8,500 mensuales, debe tener al menos 5 años de historial crediticio y dicho historial crediticio deberá ser positivo, es decir, que siempre han pagado a tiempo, finalmente, el monto del crédito deberá ser de al menos $10,000.
+
+Después de una discusión acalorada donde la Lic. Petra comenzó a llorar defendiendo a la gente de bajos recursos, se llegó al siguiente acuerdo, fue horrible, la reunión terminó a las 9:00 p.m., pero al final, todos abrazaron a la Lic. Petra y oraron por ella, hubo galletas y café para todos. Se llegaron a los siguientes acuerdos.
+
+El prospecto deberá tener al menos 18 años de edad, con un ingreso de al menos $4,000 al mes, deberá tener al menos 2 años trabajando, ya no se revisará su historial crediticio y se estableció a que el préstamo máximo sería de máximo un 15% del salario mensual del prospecto multiplicado por 12 mensualidades. Adicionalmente, si el prospecto tiene al menos $10,000 de saldo en su cuenta de banco o si el préstamo es para una cuestión médica, su crédito será aprobado automáticamente.
+
+El reporte deberá mostrar la edad del prospecto, su ingreso mensual, de cuánto sería el monto máximo del préstamo y su crédito será aprobado o no.
+Algoritmo sin_titulo
+	escribir "edad" 
+	leer edad 
+	escribir "ingleso_mes"
+	leer ingleso_mes 
+	escribir "saldo_cuenta"
+	leer saldo_cuenta
+	escribir "años_trabajados"
+	leer años_trabajados
+	escribir "¿situacion_medica)(1= si, 2= no)"
+	leer situacion_medica
+	
+	c1 = edad >= 18
+	c2 = saldo_cuenta >= 10000
+	c3= años_trabajados>= 2
+	c4=ingleso_mes>=4000
+	
+	
+	pretamo_maximo=ingleso_mes * 0.15*12
+	
+	leer prestamo_maximo
+	leer credito_aprobado
+	
+	creapr =  c1 y c2 y c3 o c4 o situacion_medica
+	
+	escribir c1
+	escribir c2
+	escribir c3
+	escribir c4
+	//prestamo apicable
+	escribir nombre, ingleso mensual, "prestamo_maximo", creapr
+FinAlgoritmo
+> 2000
+años_trabajados
+> 3
+¿situacion_medica)(1= si, 2= no)
+> 1
+>
+>
+VERDADERO
+FALSO
+VERDADERO
+FALSO
+prestamo_maximoVERDADERO
+*** Ejecución Finalizada
